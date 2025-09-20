@@ -67,9 +67,11 @@ h3 {
 }
 
 iframe {
-    height: 500px;
-    border: 0;
     width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 250px;
+    border: 0;
     border-radius: 18px;
 }
 
@@ -315,9 +317,14 @@ a {
 .about-us .about-us-item {
     flex-basis: 35%;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .about-us .about-us-item img {
-    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 .about-us h3 {
     font-size: 2.5rem;
@@ -326,7 +333,9 @@ a {
 .about-us p {
     font-size: 1.3rem;
     margin: 1rem 0;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 
 /*--------------------------------------------------
@@ -516,9 +525,7 @@ input[type="submit"]:hover {
     }
 
     iframe {
-        height: 500px;
-        border: 0;
-        width: 100%;
+        min-height: 300px;
     }
 
     .container {
@@ -538,7 +545,7 @@ input[type="submit"]:hover {
     }
 
     .about-us .about-us-item img {
-        height: 405px;
+        max-width: 350px;
     }
 }
 
@@ -550,15 +557,21 @@ input[type="submit"]:hover {
     .about-us .about-us-item {
         flex: 1 0 100%;
         margin-bottom: 1rem;
+        text-align: center;
     }
 
     .about-us p {
-        margin: 0.5rem 0;
+        margin: 0.5rem auto;
         width: 100%;
+        text-align: center;
     }
 
     .about-us .about-us-item img {
-        display: none;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block; /* KEEP VISIBLE */
+        margin: 0 auto;
     }
 }
 
